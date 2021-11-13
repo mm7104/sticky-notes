@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px auto;
+  background: radial-gradient(white, grey);
+  font-family: "Shadows Into Light";
+}
+
+.heading p {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-size: 45px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+textarea,
+p {
+  width: 100%;
+  height: 80%;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Architects Daughter";
+}
+textarea::placeholder {
+  color: black;
+}
+textarea::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.37);
+  border-radius: 100vw;
+}
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notes li {
+  list-style: none;
+  margin: 10px;
+}
+
+.notes li a {
+  text-decoration: none;
+  color: black;
+  background: #ffff80;
+  display: block;
+  height: 200px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transform: rotate(-4deg);
+  margin: 10px;
+  border: black;
+  border-width: 1px;
+}
+
+.notes li:nth-child(even) a {
+  transform: rotate(2.5deg);
+  position: relative;
+  top: 5px;
+}
+
+.notes li a:hover {
+  box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.7);
+  transform: scale(1.15);
+  transition: 0.25s;
+  /* transition: transform 0.15s linear; */
+  position: relative;
+  z-index: 5;
+}
+
+.notes li:nth-child(3n) a {
+  position: relative;
+  top: -5px;
+  background: #ccf;
+}
+
+.notes li:nth-child(3n-1) a {
+  position: relative;
+  top: -5px;
+  background: #cfc;
+}
